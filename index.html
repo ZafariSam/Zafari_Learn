@@ -24,7 +24,13 @@
       font-family: 'Work Sans', sans-serif;
       color: white;
     }
-    a{color: white; text-decoration: none;}
+    a{
+      color: white;
+      text-decoration: none;
+    }
+    span.point{
+      color: var(--green);
+    }
     .btn{
       cursor: pointer;
     }
@@ -33,24 +39,28 @@
       width: 70%; margin: -70px auto 0px; background-color: white; border-radius: 5px; padding-bottom: 39%; box-shadow: 0px 10px 50px #0004; background-image:url('./img/Video_Thumb_01.jpg'); background-position: center; background-position: center; background-size: 100%;
     }
     .vid-container:hover{background-size: 105%;}
-    span.point{
-      color: var(--green);
-    }
     .mk-btn{width: 13px; margin: 5px; height: 13px; border-radius: 100px;}
+    #flex{display: flex;}
+
+    @media only screen and (max-width: 800px) {
+      #flex {
+        display: block;
+      }
+}
   </style>
   <body onload="subject()">
     <div class="top-banner"
-      style="width: 100%; height: 100%; background-color: var(--dark); background-image: url('./img/Artboard 1Soccer player.png'); padding: 230px 14% 250px 10%; box-sizing: border-box; background-repeat: no-repeat; background-position: right; background-size: 80%;">
+      style="width: 100%; height: 100%; background-color: var(--dark); background-image: url('./img/Artboard 1Soccer.png'); padding: 230px 14% 250px 10%; box-sizing: border-box; background-repeat: no-repeat; background-position: right; background-size: 100%;">
       <div class="" style="width: 180px; margin-bottom: 20px;">
         <img style="width: 100%;" src="img/Zafari_Logo_01-01.svg" alt="">
       </div>
-      <h1 style="font-size: 3.5em; text-transform: capitalize; font-weight: 900">Help your students be the best at
+      <h1 style="font-size: 5vw; text-transform: capitalize; font-weight: 700">Help your students be the best at
         <span id="subject-span" style="color: var(--green)"></span>
         </br>quick, quick
         <span class="point">.</span>
       </h1>
       <h3 style="font-weight: 300; margin: 20px 0px; padding-right: 20%;">
-        Stream hundreds of engaging videos based on school curriculum from as little as 60 bucks per student, per month.
+        Stream hundreds of engaging videos based on the school curriculum from as little as 60 bucks per student, per month.
       </h3>
       <div class="" style="display: flex;">
           <div class="btn" style="padding: 10px 25px; color: white; background-color: var(--red); border-radius: 2px;">
@@ -72,16 +82,16 @@
         </div>
       </a>
       <div class="" style="text-align: center; padding: 40px 20%;">
-        <h2 style="">Hign Quality, Engaging and Cool.</h2>
+        <h2 style="">High Quality, Engaging and Cool.</h2>
         <div class="" style="width: 100px; margin:15px auto; height: 5px; background-color: var(--green);"></div>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
       </div>
     </div>
-    <div class="section-01"
+    <div class="section-01" id="access"
       style="height: 100%; padding: 100px 0px;">
-      <div class="" style="display: flex;">
+      <div class="" id="flex" style="">
         <div class="img"
-          style="background-color: #0000; width: 50%; height: 400px; border-radius: 0px 10px 10px 0px; box-shadow: 0px 0px 100px #0004; background-image: url('./img/Euclid_Img_01.jpg'); background-position-x: 20%;">
+          style="background-color: #0000; width: 50%; height: 400px; border-radius: 0px 10px 10px 0px; background-image: url('./img/Euclid_Img_02-06.png'); background-position: center; background-size: contain; background-repeat: no-repeat;">
         </div>
         <div class="" style="color: var(--dark); width: 50%; display: grid; margin: 70px 100px; align-self: center;">
           <h2 style="">Instant Access. Anywhere, Anytime.</h2>
@@ -90,16 +100,16 @@
         </div>
       </div>
     </div>
-    <div class="section-02"
+    <div class="section-02" id="easy"
       style="height: 100%; padding: 100px 0px 0px; background-color: #cacaca11; overflow-x: hidden;">
-      <div class="" style="display: flex;">
+      <div class="" id="flex" style="">
         <div class="" style="color: var(--dark); width: 50%; display: grid; margin: 0px 100px 70px; align-self: center;">
           <h2 style="">No Fuss. Your Students Get What They Need.</h2>
           <div class="" style="width: 100px; margin:15px 0px; height: 5px; background-color: var(--green);"></div>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
         </div>
         <div class=""
-          style="background-color: #0000; width: 60%; height: 400px; border-radius: 10px 0px 0px 0px; box-shadow: 0px 0px 100px #0000000f; border-style: none; border-width: 1px; border-color: #0002;">
+          style="background-color: #0000; width: 50%; height: 400px; border-radius: 10px 0px 0px 0px; box-shadow: 0px 0px 100px #0000000f; border-style: none; border-width: 1px; border-color: #0002;">
           <div class="" style="display: flex; padding: 10px;">
             <div class="mk-btn" style="background-color: #f35858"></div>
             <div class="mk-btn" style="background-color: #ffd400"></div>
@@ -124,28 +134,36 @@
         </div>
       </div>
     </div>
-    <div class="section-03"
-      style="color:var(--dark); position: relative; background-color: #fff; z-index: 1;">
-      <div class="" style="text-align: center; padding: 130px 20%;">
-        <h2 style="">Localised Content.</h2>
-        <div class="" style="width: 100px; margin:15px auto; height: 5px; background-color: var(--green);"></div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+    <div class="section-03" id="local"
+      style="height: 100%; padding: 100px 0px;">
+      <div class="" id="flex" style="">
+        <div class="img"
+          style="background-color: #0000; width: 50%; height: 400px; border-radius: 0px 10px 10px 0px; box-shadow: 0px 0px 100px #0004; background-image: url('./img/Artboard 1MG.png'); background-size: cover; background-position: center;">
+        </div>
+        <div class="" style="color: var(--dark); width: 50%; display: grid; margin: 70px 100px; align-self: center;">
+          <h2 style="">Localised Content</h2>
+          <div class="" style="width: 100px; margin:15px 0px; height: 5px; background-color: var(--green);"></div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        </div>
       </div>
     </div>
-    <div class="section-04"
+    <div class="section-04" id="price"
       style="height: 100%; padding: 100px 0px; background-color: #cacaca11;">
-      <div class="" style="display: flex;">
-        <div class="" style="color: var(--dark); width: 45%; display: grid; margin: 70px 100px; align-self: center;">
+      <div class="" id="flex" style="">
+        <div class="" style="color: var(--dark); width: 45%; display: grid; margin: 0px 8%; align-self: center;">
           <h2 style="">Affordable, Straight-Forward Pricing.</h2>
           <div class="" style="width: 100px; margin:15px 0px; height: 5px; background-color: var(--green);"></div>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
         </div>
         <div class=""
-          style="background-color: white; width: 350px; height: 400px; border-radius: 5px; box-shadow: 0px 0px 100px #0000000f; margin-right: 100px;">
+          style="box-sizing: border-box; display: grid; align-items: center; background-color: white; width: 30%; min-width: 350px; height: 400px; border-radius: 5px; box-shadow: 0px 0px 100px #0000000f; margin-right: 100px; color: black; padding: 60px;">
+          <div class="" style="">
+            <h2>R1800 <span style="font-size: 0.5em;">per month</span></h2>
+          </div>
         </div>
       </div>
     </div>
-    <div class="section-05"
+    <div class="section-05" id="flipped"
       style="color:var(--dark); padding: 100px; position: relative; background-color: #fff; z-index: 1; background-size: cover; background-position: center;">
       <div class="" style="text-align: center; padding: 40px 12%;">
         <h2 style="">Flip the Classroom.</h2>
@@ -153,20 +171,22 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
       </div>
     </div>
-    <div class="section-06"
+    <div class="section-06" id="analyse"
       style="height: 100%; padding: 100px 0px;">
-      <div class="" style="display: flex;">
+      <div class="" id="flex" style="">
         <div class="img"
-          style="background-color: #0000; width: 50%; height: 400px; border-radius: 0px 10px 10px 0px; box-shadow: 0px 0px 100px #0004; background-image: url('./img/Euclid_Img_01.jpg'); background-position-x: 20%;">
+          style="display: grid; align-items: center; background-color: #0000; width: 50%; height: 400px; border-radius: 0px 10px 10px 0px; background-position-x: 20%;"
+          >
+          <img style="width: 100%;" src="img/Learn_Imgs_Analyse-05.png" alt="">
         </div>
         <div class="" style="color: var(--dark); width: 50%; display: grid; margin: 70px 100px; align-self: center;">
-          <h2 style="">Analyse Engagment.</h2>
+          <h2 style="">Analyse Engagement.</h2>
           <div class="" style="width: 100px; margin:15px 0px; height: 5px; background-color: var(--green);"></div>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
         </div>
       </div>
     </div>
-    <div class="section-07"
+    <div class="section-07" id="register"
       style="height: 100%; padding: 100px 12%; background-color: #cacaca11;">
       <div class="" style="">
         <div class=""
