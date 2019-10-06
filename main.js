@@ -9,3 +9,7 @@ function subject() {
     //console.log('Interval')
   }, 1000);
 }
+
+window.addEventListener("resize", function(){
+  let w = document.documentElement.clientWidth;
+});

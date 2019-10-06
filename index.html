@@ -31,30 +31,63 @@
     span.point{
       color: var(--green);
     }
+    .top-banner{
+      width: 100%; height: 100%; background-color: var(--dark); background-image: url('./img/Artboard 1Soccer.png'); padding: 230px 14% 250px 10%; box-sizing: border-box; background-repeat: no-repeat; background-position: right; background-size: 100%;
+    }
+    #flex .block{
+      width: 50%;
+    }
     .btn{
       cursor: pointer;
     }
-    .brd{border-style: solid; border-width: 1px; border-color: var(--green);}
+    .brd{
+      border-style: solid; border-width: 1px; border-color: var(--green);
+    }
     .vid-container{
       width: 70%; margin: -70px auto 0px; background-color: white; border-radius: 5px; padding-bottom: 39%; box-shadow: 0px 10px 50px #0004; background-image:url('./img/Video_Thumb_01.jpg'); background-position: center; background-position: center; background-size: 100%;
     }
-    .vid-container:hover{background-size: 105%;}
-    .mk-btn{width: 13px; margin: 5px; height: 13px; border-radius: 100px;}
+    .vid-container:hover{
+      background-size: 105%;
+    }
+    .mk-btn{
+      width: 13px; margin: 5px; height: 13px; border-radius: 100px;
+    }
+    .main-heading{
+      font-size: 5vw; text-transform: capitalize; font-weight: 700;
+    }
+    .res-cent{
+      margin-right: 100px;
+    }
     #flex{display: flex;}
 
     @media only screen and (max-width: 800px) {
+      .main-heading{
+        font-size: 6vh;
+      }
+      .top-banner{
+        padding-top: 20%;
+        padding-bottom: 25%;
+        background-size: 150%;
+      }
       #flex {
         display: block;
+      }
+      #flex .block{
+        width:100%
+      }
+      .res-cent{
+        margin:auto;
+        margin-top: 70px;
       }
 }
   </style>
   <body onload="subject()">
     <div class="top-banner"
-      style="width: 100%; height: 100%; background-color: var(--dark); background-image: url('./img/Artboard 1Soccer.png'); padding: 230px 14% 250px 10%; box-sizing: border-box; background-repeat: no-repeat; background-position: right; background-size: 100%;">
-      <div class="" style="width: 180px; margin-bottom: 20px;">
+      style="">
+      <div class="" style="width: 20%; min-width: 150px; max-width: 220px; margin-bottom: 20px;">
         <img style="width: 100%;" src="img/Zafari_Logo_01-01.svg" alt="">
       </div>
-      <h1 style="font-size: 5vw; text-transform: capitalize; font-weight: 700">Help your students be the best at
+      <h1 class="main-heading" style="">Help your students be the best at
         <span id="subject-span" style="color: var(--green)"></span>
         </br>quick, quick
         <span class="point">.</span>
@@ -84,19 +117,19 @@
       <div class="" style="text-align: center; padding: 40px 20%;">
         <h2 style="">High Quality, Engaging and Cool.</h2>
         <div class="" style="width: 100px; margin:15px auto; height: 5px; background-color: var(--green);"></div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        <p>In a modern environment of constant distraction engaging content is more important than ever. We produce cotent that speaks to your students on a level they can understand on enjoy.</p>
       </div>
     </div>
     <div class="section-01" id="access"
       style="height: 100%; padding: 100px 0px;">
       <div class="" id="flex" style="">
-        <div class="img"
-          style="background-color: #0000; width: 50%; height: 400px; border-radius: 0px 10px 10px 0px; background-image: url('./img/Euclid_Img_02-06.png'); background-position: center; background-size: contain; background-repeat: no-repeat;">
+        <div class="img block"
+          style="background-color: #0000; height: 400px; border-radius: 0px 10px 10px 0px; background-image: url('./img/Euclid_Img_02-06.png'); background-position: center; background-size: contain; background-repeat: no-repeat;">
         </div>
         <div class="" style="color: var(--dark); width: 50%; display: grid; margin: 70px 100px; align-self: center;">
           <h2 style="">Instant Access. Anywhere, Anytime.</h2>
           <div class="" style="width: 100px; margin:15px 0px; height: 5px; background-color: var(--green);"></div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+          <p>We offer a flexible solution which and be accessed by your stendents no matter where they are. All of our content support HLS streaming which allows access to the content even on low bandwidth connections. Plus you have to worry less about data usage.</p>
         </div>
       </div>
     </div>
@@ -108,8 +141,8 @@
           <div class="" style="width: 100px; margin:15px 0px; height: 5px; background-color: var(--green);"></div>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
         </div>
-        <div class=""
-          style="background-color: #0000; width: 50%; height: 400px; border-radius: 10px 0px 0px 0px; box-shadow: 0px 0px 100px #0000000f; border-style: none; border-width: 1px; border-color: #0002;">
+        <div class="block"
+          style="background-color: #0000; height: 400px; border-radius: 10px 0px 0px 0px; box-shadow: 0px 0px 100px #0000000f; border-style: none; border-width: 1px; border-color: #0002;">
           <div class="" style="display: flex; padding: 10px;">
             <div class="mk-btn" style="background-color: #f35858"></div>
             <div class="mk-btn" style="background-color: #ffd400"></div>
@@ -137,13 +170,13 @@
     <div class="section-03" id="local"
       style="height: 100%; padding: 100px 0px;">
       <div class="" id="flex" style="">
-        <div class="img"
-          style="background-color: #0000; width: 50%; height: 400px; border-radius: 0px 10px 10px 0px; box-shadow: 0px 0px 100px #0004; background-image: url('./img/Artboard 1MG.png'); background-size: cover; background-position: center;">
+        <div class="img block"
+          style="background-color: #0000; height: 400px; border-radius: 0px 10px 10px 0px; box-shadow: 0px 0px 100px #0004; background-image: url('./img/Artboard 1MG.png'); background-size: cover; background-position: center;">
         </div>
         <div class="" style="color: var(--dark); width: 50%; display: grid; margin: 70px 100px; align-self: center;">
           <h2 style="">Localised Content</h2>
           <div class="" style="width: 100px; margin:15px 0px; height: 5px; background-color: var(--green);"></div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+          <p>You don't want generic content that has been made for european or american audiences. We produce videos that are localised for african students using examples that scearios which they can connect with.</p>
         </div>
       </div>
     </div>
@@ -153,10 +186,10 @@
         <div class="" style="color: var(--dark); width: 45%; display: grid; margin: 0px 8%; align-self: center;">
           <h2 style="">Affordable, Straight-Forward Pricing.</h2>
           <div class="" style="width: 100px; margin:15px 0px; height: 5px; background-color: var(--green);"></div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+          <p>Budgets can be tight, so we what to keep costs down and be clear and transparent about how much you will be spending upfront. We provide content in batches of 30 with discount or larger classes and yearly subscriptions.</p>
         </div>
-        <div class=""
-          style="box-sizing: border-box; display: grid; align-items: center; background-color: white; width: 30%; min-width: 350px; height: 400px; border-radius: 5px; box-shadow: 0px 0px 100px #0000000f; margin-right: 100px; color: black; padding: 60px;">
+        <div class="res-cent"
+          style="box-sizing: border-box; display: grid; align-items: center; background-color: white; width: 30%; min-width: 350px; height: 400px; border-radius: 5px; box-shadow: 0px 0px 100px #0000000f;color: black; padding: 60px;">
           <div class="" style="">
             <h2>R1800 <span style="font-size: 0.5em;">per month</span></h2>
           </div>
@@ -168,21 +201,21 @@
       <div class="" style="text-align: center; padding: 40px 12%;">
         <h2 style="">Flip the Classroom.</h2>
         <div class="" style="width: 100px; margin:15px auto; height: 5px; background-color: var(--green);"></div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <p>The internet and online education have opened up many new ways of teaching. One of these method is the flipped classroom. Don't waste your valuable classroom time reading facts for textbox allow that to happen outside of the class room and use your time in class to expand on the subjects and answer questions.</p>
       </div>
     </div>
     <div class="section-06" id="analyse"
       style="height: 100%; padding: 60px 0px;">
       <div class="" id="flex" style="">
-        <div class="img"
-          style="display: grid; align-items: center; background-color: #0000; width: 50%; height: 400px; border-radius: 0px 10px 10px 0px; background-position-x: 20%;"
+        <div class="img block"
+          style="display: grid; align-items: center; background-color: #0000; height: 400px; border-radius: 0px 10px 10px 0px; background-position-x: 20%;"
           >
           <img style="width: 100%;" src="img/Learn_Imgs_Analyse-05.png" alt="">
         </div>
         <div class="" style="color: var(--dark); width: 50%; display: grid; margin: 70px 100px; align-self: center;">
           <h2 style="">Analyse Engagement.</h2>
           <div class="" style="width: 100px; margin:15px 0px; height: 5px; background-color: var(--green);"></div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+          <p>We approach our content with a view of continuous improvement.</p>
         </div>
       </div>
     </div>
@@ -195,7 +228,7 @@
         <div class="" style="color: var(--dark); display: grid; margin: 70px 20% 0px; text-align: center;">
           <h2 style="">Register Now.</h2>
           <div class="" style="width: 100px; margin:15px auto; height: 5px; background-color: var(--green);"></div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+          <p>Register your interest now to stay upto date and get 10% of your first subscriptions on launch.</p>
         </div>
       </div>
     </div>
