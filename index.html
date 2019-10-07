@@ -71,13 +71,23 @@
     input{
       width: 100%;
       box-sizing: border-box;
-      margin: 5px 0px;
+      margin: 8px 0px;
       padding: 5px;
       border-radius: 0px;
       border-width: 0px;
       border-style: solid;
       border-color: #0005;
       border-bottom-width: 1px;
+      font-size: 0.8em;
+    }
+    textarea{
+      width:100%; resize: none; overflow: auto; padding: 5px; box-sizing: border-box;
+      border-width: 0px;
+      border-style: solid;
+      border-color: #0005;
+      border-bottom-width: 1px;
+      margin: 8px 0px;
+      font-size: 0.8em;
     }
     input:focus{
       outline-color: var(--red);
@@ -233,7 +243,7 @@
           style="background-color: #0000; height: 400px; border-radius: 0px 10px 10px 0px; box-shadow: 0px 0px 100px #0004; background-image: url('./img/Artboard 1MG.png'); background-size: cover; background-position: center;">
         </div>
         <div class="" style="color: var(--dark); width: 50%; display: grid; margin: 70px 100px; align-self: center;">
-          <h2 style="">Localised Content</h2>
+          <h2 style="">Localised Content.</h2>
           <div class="" style="width: 100px; margin:15px 0px; height: 5px; background-color: var(--green);"></div>
           <p>You don't want generic content that has been made for european or american audiences. We produce videos that are localised for african students using examples that scearios which they can connect with.</p>
         </div>
@@ -251,15 +261,15 @@
           style="">
           <div class="" style="">
             <h3>Standard (Monthly)</h3>
-            <div class="" style="width: 100px; margin:10px auto; height: 5px; background-color: var(--green);"></div>
+            <div class="" style="width: 100px; margin: 15px auto; height: 3px; background-color: var(--purple);"></div>
               <h2 style="">R1,800<span style="font-size: 0.5em;">.00</span></h2>
             <h4 style="font-size: 0.8em; font-weight: 400">per class / per month</h4>
           </div>
           <div class="" style="margin: 20px 0px;">
             <h4>Plan Includes:</h4>
-            <h5 class="plan-pnt" style="">Access for upto 30 Students</h5>
-            <h5 class="plan-pnt" style="">Access to Analytics and progress data.</h5>
-            <h5 class="plan-pnt" style="">Client Support via Email</h5>
+            <h5 class="plan-pnt" style="">Access for upto 30 students</h5>
+            <h5 class="plan-pnt" style="">Analytics and progress data.</h5>
+            <h5 class="plan-pnt" style="">Client support via email</h5>
             <h5 class="plan-pnt" style="">10% discount off bespoke production costs</h5>
           </div>
           <a href="#register">
@@ -306,9 +316,11 @@
         <div class="details" style="color: black;">
           <h4>Your Details</h4>
           <form class="" action="/" method="post" style="margin-top: 10px">
-            <input type="text" required name="Name" value="" placeholder="Name">
-            <input type="text" required name="Org" value="" placeholder="School / Organisation">
-            <input type="text" required name="email" value="" placeholder="Email">
+            <input type="text" required name="Name" value="" placeholder="Name*">
+            <input type="text" required name="Org" value="" placeholder="School / Organisation*">
+            <input type="text" required name="email" value="" placeholder="Email*">
+            <textarea name="name" placeholder="Questions?" value=""
+              style=""></textarea>
             <button type="submit" name="button">Submit</button>
           </form>
         </div>
