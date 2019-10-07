@@ -13,3 +13,7 @@ function subject() {
 window.addEventListener("resize", function(){
   let w = document.documentElement.clientWidth;
 });
+
+document.getElementById('sub-btn').addEventListener('click', () => {
+  console.log('Click')
+});
