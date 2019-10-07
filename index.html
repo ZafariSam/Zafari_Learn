@@ -59,10 +59,13 @@
       margin-right: 100px;
     }
     .price-cont{
-      box-sizing: border-box; display: grid; align-items: center; background-color: white; width: 30%; min-width: 350px; border-radius: 5px; box-shadow: 0px 0px 100px #0000000f;color: black; padding: 50px; text-align: center;
+      box-sizing: border-box; display: grid; align-items: center; background-color: white; width: 30%; min-width: 350px; border-radius: 5px; box-shadow: 0px 0px 100px #0000000f;color: black; padding: 50px; text-align: center; min-height: 400px;
     }
     .plan-pnt{
       font-weight:500; padding: 5px 0px;
+    }
+    .price-txt{
+      margin: 0px 8%; width: 45%;
     }
     #flex{display: flex;}
 
@@ -85,6 +88,9 @@
       .res-cent{
         margin:auto;
         margin-top: 70px;
+      }
+      .price-txt{
+        margin: 0px 15%; width: 60%;
       }
 }
   </style>
@@ -190,7 +196,7 @@
     <div class="section-04" id="price"
       style="height: 100%; padding: 100px 0px; background-color: #cacaca11;">
       <div class="" id="flex" style="">
-        <div class="" style="color: var(--dark); width: 45%; display: grid; margin: 0px 8%; align-self: center;">
+        <div class="price-txt" style="color: var(--dark); display: grid;  align-self: center;">
           <h2 style="">Affordable, Straight-Forward Pricing.</h2>
           <div class="" style="width: 100px; margin:15px 0px; height: 5px; background-color: var(--green);"></div>
           <p>Budgets can be tight, so we what to keep costs down and be clear and transparent about how much you will be spending upfront. We provide content in batches of 30 with discount or larger classes and yearly subscriptions.</p>
@@ -198,19 +204,20 @@
         <div class="res-cent price-cont"
           style="">
           <div class="" style="">
-            <h3>Standard</h3>
+            <h3>Standard (Monthly)</h3>
             <div class="" style="width: 100px; margin:10px auto; height: 5px; background-color: var(--green);"></div>
-            <h2 style="">R2,000<span style="font-size: 0.5em;">.00</span><h2>
+            <h2 style="">R2,000<span style="font-size: 0.5em;">.00</span></h2>
             <h4 style="font-size: 0.8em; font-weight: 400">per class / per month</h4>
           </div>
           <div class="" style="margin: 20px 0px;">
             <h4>Plan Includes:</h4>
-            <h5 class="plan-pnt" style="">Access for 30 Students</h5>
+            <h5 class="plan-pnt" style="">Access for upto 30 Students</h5>
             <h5 class="plan-pnt" style="">Access to Analytics and progress data.</h5>
             <h5 class="plan-pnt" style="">Client Support via Email</h5>
             <h5 class="plan-pnt" style="">10% discount off bespoke production costs</h5>
           </div>
-          <div class="btn" style="width:100%; background-color: var(--red); color: white; padding: 10px; box-sizing: border-box; border-radius: 5px; align-self: end;">
+          <div class="btn"
+            style="width:100%; background-color: var(--red); color: white; padding: 10px; box-sizing: border-box; border-radius: 5px; align-self: end;">
             <h4>Register your interest now!</h4>
           </div>
         </div>
