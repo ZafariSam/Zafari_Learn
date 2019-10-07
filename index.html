@@ -317,11 +317,11 @@
         </div>
         <div class="details" style="color: black;">
           <h4>Your Details</h4>
-          <form class="" action="" method="post" style="margin-top: 10px">
-            <input type="text" required name="Name" value="" placeholder="Name*">
-            <input type="text" required name="Org" value="" placeholder="School / Organisation*">
+          <form class=""name="contact" action="#" method="post" style="margin-top: 10px">
+            <input type="text" required name="fname" value="" placeholder="Name*">
+            <input type="text" required name="org" value="" placeholder="School / Organisation*">
             <input type="text" required name="email" value="" placeholder="Email*">
-            <textarea name="name" placeholder="Questions?" value=""
+            <textarea name="q" placeholder="Questions?" value=""
               style=""></textarea>
             <button id="sub-btn" type="submit" name="button">Submit</button>
           </form>
@@ -335,6 +335,8 @@
       </div>
     </div>
 
+    <script src="https://www.gstatic.com/firebasejs/7.1.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-firestore.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.js"></script>
     <script type="text/javascript" src="main.js"></script>
