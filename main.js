@@ -40,6 +40,7 @@ document.getElementById('sub-btn').addEventListener('click', () => {
       })
       .then(function() {
           console.log("Document successfully written!");
+          snackCall();
       })
       .catch(function(error) {
           console.error("Error writing document: ", error);
@@ -55,4 +56,11 @@ function clearFields(){
   document.getElementById('e').value = '';
   document.getElementById('q').value = '';
   return false;
+}
+
+function snackCall(){
+  document.getElementById('snack').style.opacity = 1;
+  setTimeout(() => {
+    document.getElementById('snack').style.opacity = 0;
+    }, 5000)
 }
