@@ -68,7 +68,12 @@
       margin: 0px 8%; width: 45%;
     }
     #flex{display: flex;}
-
+    input{
+      width: 100%;
+      box-sizing: border-box;
+      margin: 5px 0px;
+      padding: 5px;
+    }
 
     @media only screen and (max-width: 800px) {
       .main-heading{
@@ -248,14 +253,21 @@
     </div>
     <div class="section-07" id="register"
       style="height: 100%; padding: 100px 12%; background-color: #cacaca11;">
-      <div class="" style="">
-        <div class=""
-          style="display: grid; background-color: white; height: 300px; border-radius: 5px; box-shadow: 0px 0px 100px #0000000f; grid-template-columns: 50% auto;">
-          <div class="" style="color: var(--dark); margin: 70px 10%;">
-            <h2 style="">Register Now.</h2>
-            <div class="" style="width: 100px; margin:15px auto; height: 5px; background-color: var(--green);"></div>
-            <p>Register your interest now to stay upto date and get 10% of your first subscriptions on launch.</p>
-          </div>
+      <div class=""
+        style="display: grid; background-color: white; border-radius: 5px; box-shadow: 0px 0px 100px #0000000f; grid-template-columns: 50% auto; align-items: center; padding: 70px">
+        <div class="" style="color: var(--dark); margin-right: 30px;">
+          <h2 style="">Register Now.</h2>
+          <div class="" style="width: 100px; margin:15px 0px; height: 5px; background-color: var(--green);"></div>
+          <p>Register your interest now to stay upto date and get 10% of your first subscriptions on launch.</p>
+        </div>
+        <div class="details" style="color: black; align-self: baseline;">
+          <h4>Details</h4>
+          <form class="" action="index.html" method="post">
+            <input type="text" required name="Name" value="" placeholder="Name">
+            <input type="text" required name="Org" value="" placeholder="School / Organisation">
+            <input type="text" required name="email" value="" placeholder="Email">
+            <button type="submit" name="button">Submit</button>
+          </form>
         </div>
       </div>
     </div>
