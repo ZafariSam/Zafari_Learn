@@ -73,6 +73,23 @@
       box-sizing: border-box;
       margin: 5px 0px;
       padding: 5px;
+      border-radius: 5px;
+      border-width: 1px;
+      border-style: solid;
+      border-color: #0003;
+    }
+    input:focus{
+      outline-color: var(--red);
+    }
+    button{
+      background-color: var(--red);
+      border: none;
+      border-radius: 5px;
+      padding: 5px 15px;
+      margin-top: 5px;
+      color: white;
+      font-size: 0.8em;
+      font-weight: 700;
     }
 
     @media only screen and (max-width: 800px) {
@@ -221,10 +238,12 @@
             <h5 class="plan-pnt" style="">Client Support via Email</h5>
             <h5 class="plan-pnt" style="">10% discount off bespoke production costs</h5>
           </div>
-          <div class="btn"
-            style="width:100%; background-color: var(--red); color: white; padding: 10px; box-sizing: border-box; border-radius: 5px; align-self: end;">
-            <h4>Register your interest now!</h4>
-          </div>
+          <a href="#register">
+            <div class="btn"
+              style="width:100%; background-color: var(--red); color: white; padding: 10px; box-sizing: border-box; border-radius: 5px; align-self: end;">
+              <h4>Register your interest now!</h4>
+            </div>
+          </a>
         </div>
       </div>
     </div>
@@ -254,15 +273,15 @@
     <div class="section-07" id="register"
       style="height: 100%; padding: 100px 12%; background-color: #cacaca11;">
       <div class=""
-        style="display: grid; background-color: white; border-radius: 5px; box-shadow: 0px 0px 100px #0000000f; grid-template-columns: 50% auto; align-items: center; padding: 70px">
+        style="display: grid; background-color: white; border-radius: 5px; box-shadow: 0px 0px 100px #0000000f; grid-template-columns: 50% auto; padding: 70px">
         <div class="" style="color: var(--dark); margin-right: 30px;">
           <h2 style="">Register Now.</h2>
           <div class="" style="width: 100px; margin:15px 0px; height: 5px; background-color: var(--green);"></div>
           <p>Register your interest now to stay upto date and get 10% of your first subscriptions on launch.</p>
         </div>
-        <div class="details" style="color: black; align-self: baseline;">
-          <h4>Details</h4>
-          <form class="" action="index.html" method="post">
+        <div class="details" style="color: black;">
+          <h4>Your Details</h4>
+          <form class="" action="/" method="post">
             <input type="text" required name="Name" value="" placeholder="Name">
             <input type="text" required name="Org" value="" placeholder="School / Organisation">
             <input type="text" required name="email" value="" placeholder="Email">
