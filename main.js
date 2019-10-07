@@ -9,7 +9,6 @@
   firebase.initializeApp(firebaseConfig);
   const db = firebase.firestore();
 
-
 function subject() {
   var sub = ['maths', 'english', 'science', 'geography', 'history'];
   var arrLen = sub.length;
@@ -45,7 +44,15 @@ document.getElementById('sub-btn').addEventListener('click', () => {
       .catch(function(error) {
           console.error("Error writing document: ", error);
       });
-      console.log(`Name: ${name}, Org: ${org}, Email: ${email}, Question: ${question}`)
+      //console.log(`Name: ${name}, Org: ${org}, Email: ${email}, Question: ${question}`)
     }
-    else {console.log("Info Required")}
+    else {}
 });
+
+function clearFields(){
+  document.getElementById('n').value = '';
+  document.getElementById('o').value = '';
+  document.getElementById('e').value = '';
+  document.getElementById('q').value = '';
+  return false;
+}

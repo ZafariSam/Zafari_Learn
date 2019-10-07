@@ -317,13 +317,12 @@
         </div>
         <div class="details" style="color: black;">
           <h4>Your Details</h4>
-          <form class=""name="contact" action="#" method="post" style="margin-top: 10px">
-            <input type="text" required name="fname" value="" placeholder="Name*">
-            <input type="text" required name="org" value="" placeholder="School / Organisation*">
-            <input type="text" required name="email" value="" placeholder="Email*">
-            <textarea name="q" placeholder="Questions?" value=""
-              style=""></textarea>
-            <button id="sub-btn" type="submit" name="button">Submit</button>
+          <form class=""name="contact" onsubmit="return clearFields()" style="margin-top: 10px">
+            <input type="text" id="n" required name="fname" value="" placeholder="Name*">
+            <input type="text" id="o" required name="org" value="" placeholder="School / Organisation*">
+            <input type="text" id="e" required name="email" value="" placeholder="Email*">
+            <textarea name="q" id="q" placeholder="Questions?" value="" style=""></textarea>
+            <button id="sub-btn" name="button">Submit</button>
           </form>
         </div>
       </div>
